@@ -1,0 +1,14 @@
+.pre {
+  white-space: pre-wrap;
+}
+
+.responseBody {
+  position: relative;
+}
+
+.copyData {
+  position: sticky !important;
+  top: 0;
+  margin-top: 2em;
+  float: right;
+}

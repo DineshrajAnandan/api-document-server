@@ -1,0 +1,9 @@
+.MuiTreeItem-content {
+  height: 2em;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.MuiTreeItem-group {
+  margin-left: 0 !important;
+}

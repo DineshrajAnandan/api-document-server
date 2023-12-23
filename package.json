@@ -1,0 +1,29 @@
+{
+  "name": "@bydin/api-document-server",
+  "version": "0.0.10",
+  "description": "",
+  "main": "app.js",
+  "bin": {
+    "ads": "./app.js"
+  },
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [],
+  "author": "Dineshraj Anandan",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "https-proxy-agent": "^7.0.2",
+    "lodash": "^4.17.21"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DineshrajAnandan/api-document-server"
+  }
+}
