@@ -3,6 +3,9 @@
 const express = require('express');
 const cors = require('cors');
 const path = require('path');
+const chalk = require('chalk');
+const open = require('open');
+
 const {
   getApiDocumentsDataFromConfigFiles,
 } = require('./src/server/services/file/file');
@@ -26,5 +29,10 @@ app.use(express.urlencoded({ extended: false }));
 app.use('/api/documents', documentsRouter);
 
 app.listen(PORT, () => {
-  console.log(`server listening on ${PORT}`);
+  const message = `ADS - API Document Server listening on port ${PORT}`;
+  const url = `http://localhost:${PORT}`;
+
+  console.log(chalk.green(message));
+  console.log('->', 'Local:', chalk.blueBright(url));
+  open(url);
 });
