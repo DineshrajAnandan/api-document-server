@@ -13,8 +13,9 @@ The API Documentation Server is a powerful tool that not only facilitates docume
 - [Usage](#usage)
   - [Serving the app](#serving-the-app)
   - [Creating JSON documents](#creating-json-documents)
-  - [Sample JSON documents](#sample-json-documents)
   - [Running in different PORT](#running-in-different-port)
+  - [Running behind proxy](#running-behind-proxy)
+  - [Sample JSON documents](#sample-json-documents)
 - [Built With](#built-with)
 - [Authors](#authors)
 - [License](#license)
@@ -146,6 +147,10 @@ A **request** has `operationId`, `title`, `description`, `descriptionMd`, `url`,
 ### Running in different PORT
 
 Currently, the default port for the application runs in `8001`. To modify it, we can set the node environment `PORT` to the desired port number.
+
+### Running behind proxy
+
+To run behind the corporate proxy, we can set the node environment `WEB_PROXY` before running the command `ads`
 
 ### Sample JSON documents
 
