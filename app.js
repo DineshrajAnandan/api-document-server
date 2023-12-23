@@ -10,7 +10,7 @@ const { importDocuments } = require('./src/server/services/document/document');
 
 const documentsRouter = require('./src/server/routers/documents-router');
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8001;
 const app = express();
 
 app.use(cors());
