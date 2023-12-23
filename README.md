@@ -14,6 +14,7 @@ The API Documentation Server is a powerful tool that not only facilitates docume
   - [Serving the app](#serving-the-app)
   - [Creating JSON documents](#creating-json-documents)
   - [Sample JSON documents](#sample-json-documents)
+  - [Running in different PORT](#running-in-different-port)
 - [Built With](#built-with)
 - [Authors](#authors)
 - [License](#license)
@@ -141,6 +142,10 @@ A **request** has `operationId`, `title`, `description`, `descriptionMd`, `url`,
   - `operationId` - operation id of the request that is a preRequisite
   - `valueExpression` - the expression that is used to get value from preRequisite request for the placeholder
     please take a look at example JSON for better understanding [Sample JSON documents](#sample-json-documents).
+
+### Running in different PORT
+
+Currently, the default port for the application runs in `8001`. To modify it, we can set the node environment `PORT` to the desired port number.
 
 ### Sample JSON documents
 
